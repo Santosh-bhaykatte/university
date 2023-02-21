@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website - design </title>
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- header section -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="navlinks" id="navlinks">
+
+              <i class="fa fa-times" onclick="hidemenu()"></i>
+                 
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+           </nav>
+            <h1>About Us</h1>
+        </section>
+            <!-- about us content -->
+         
+
+        <section class="about-us">
+            <div class="row">
+
+                <div class="about-col">
+                   <h1>We are the world`s largest university</h1> 
+                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam quos error, excepturi, voluptates consequuntur suscipit veritatis ab illum, laboriosam vitae eveniet soluta ut consectetur in asperiores iure doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio voluptate aspernatur obcaecati praesentium ab. Nemo eligendi consequatur vitae quia harum excepturi delectus magni fugiat atque saepe. Quia non doloribus totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ipsa exercitationem explicabo dolores. Quam cumque suscipit explicabo in ratione aperiam nostrum veniam doloribus illum! Dolor magnam pariatur ad nisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium veritatis rem debitis animi </p>
+                </div>
+                    
+                <div class="about-col">
+                    <img src="about.jpg">
+                </div>
+
+            </div>
+        </section>
+  <!-- about us content ends -->
+    
+
+    <!-- footer section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repudiandae voluptates, eius minus aspernatur magni?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o" style="font-size: 20px; font-weight: bold; color:#f44336;"></i> By Santosh Bhaykatte</p>
+         <span style="font-size: 20px;">&copy;</span>  2022 All Rights Reserved.
+    </section>
+    <!-- javascript for toggle menu  -->
+
+   <script>
+    
+    var navlinks = document.getElementById("navlinks");
+
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+    function hidemenu(){
+        navlinks.style.right= "-200px";
+    }
+    
+    </script>
+
+<!-- script ends -->
+</body>
+</html>
